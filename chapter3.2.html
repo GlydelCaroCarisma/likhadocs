@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3.2 - Methodology</title>
+    <style>
+        body { font-family: "Times New Roman", serif; 
+        margin: 0; 
+        background-color: #f9f9f9; 
+        line-height: 1.6; 
+    }
+
+        .navbar {
+            background-color: #2d2d2d; 
+            padding: 10px; 
+            position: fixed;
+            top: 0; width: 100%; 
+            z-index: 1000;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .nav-links { 
+            display: flex; 
+        }
+
+        .nav-links a { 
+            color: #fff; 
+            padding: 10px 16px; 
+            text-decoration: none; 
+            font-size: 16px; 
+        }
+
+
+        .nav-links a:hover { 
+            background-color: #575757; 
+        }
+
+        .nav-links a.underline { 
+            font-weight: bold; 
+            text-decoration: underline; 
+        }
+    
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px;
+        }
+        
+        
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc; 
+            margin: 80px 40px 40px 40px; 
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .chapter p { 
+            text-indent: 40px; 
+            text-align: justify; 
+            margin-bottom: 15px; 
+        }
+
+        .chapter ul, .chapter ol { 
+            margin-left: 60px; 
+            text-align: justify; 
+        }
+
+        .chapter li { 
+            margin-bottom: 8px; 
+        }
+
+        .pager {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 20px;
+        }
+        .pager a {                         
+            text-decoration: none;
+            font-weight: bold;
+            color: #2d2d2d;
+        }
+        .pager a:hover {
+            color: #575757;
+        }
+
+        .footer { 
+            -color: #2d2d2d; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed;
+            bottom: 0; 
+            width: 100%; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html">Chapter 2</a>
+            <a href="chapter3.1.html" class="underline">Chapter 3</a>
+        </div>
+
+       <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <h2>CHAPTER III - METHODOLOGY AND SYSTEM DEVELOPMENT (Page 2)</h2>
+
+        <h3>Deployment Phase</h3>
+        <p>
+            After successful testing, the system was deployed to a live server, making it accessible to users. This phase involves setting up the hosting environment and 
+            ensuring that all features are fully operational online.
+        </p>
+
+        <h3>Maintenance Phase</h3>
+        <p>
+            The system is continuously monitored and maintained to ensure optimal performance. Updates, bug fixes, and feature enhancements are implemented regularly based 
+            on user feedback and system performance.
+        </p>
+
+        <h3>3.2 Requirement Gathering and Analysis</h3>
+
+        <h4>Data Gathering Methods</h4>
+        <p><strong>Interview.</strong> Interviews were conducted with local makers, artisans, and potential buyers to understand their needs, challenges, and expectations in selling and purchasing handmade products online.</p>
+        <p><strong>Survey.</strong> A survey questionnaire was distributed to gather quantitative data regarding user preferences, online shopping behavior, and desired features in a digital marketplace.</p>
+        <p><strong>Observation.</strong> Existing practices in selling handmade and local products, such as the use of social media platforms and manual transaction processes, were observed.</p>
+
+        <h4>Functional Requirements</h4>
+        <ul>
+            <li>The system shall allow users to register and create accounts as buyers or makers.</li>
+            <li>The system shall allow makers to post products for sale.</li>
+            <li>The system shall enable buyers to browse available products.</li>
+            <li>The system shall allow buyers to submit purchase requests or add items to a cart.</li>
+            <li>The system shall provide administrative management of users, products, and transactions.</li>
+            <li>The system shall process online payments securely.</li>
+        </ul>
+
+        <h4>Non-Functional Requirements</h4>
+        <p><strong>Performance:</strong> The system must respond to user requests within an acceptable time and support multiple simultaneous users browsing products or making transactions.</p>
+
+        <div class="pager">
+            <a href="chapter3.1.html">← Back to Page 1</a>
+            <a href="chapter3.3.html">Next Page →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+</body>
+</html>

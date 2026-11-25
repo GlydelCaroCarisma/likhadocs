@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Documentation - Likha.ph</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background-color: #2d2d2d;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            color: #fff;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-links a:hover {
+            background-color: #575757;
+        }
+        .nav-links a.underline {
+            color: #fff;            
+            font-weight: bold;     
+            text-decoration: underline; 
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .title-page {
+            border: 2px solid #000;
+            padding: 50px;
+            margin: 80px 40px 40px 40px; 
+            background-color: #fff;
+            text-align: center;
+        }
+        .title-page p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #2d2d2d;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="underline">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html">Chapter 2</a>
+            <a href="chapter3.1.html">Chapter 3</a>
+        </div>
+
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+
+    <div class="title-page">
+        <h1>PROJECT DOCUMENTATION TEMPLATE</h1>
+        <h2>Likha.ph: A Cloud-Integrated Digital Marketplace for Local Makers</h2>
+        <p><strong>Proponents:</strong></p>
+        <p>Jeffry C. Casipe<br>
+           Glydel C. Carisma<br>
+           Tonie Rose C. Mana-ay<br>
+           Ruby A. Tuvilla</p>
+        <p><strong>Course / Subject:</strong> CIT 214 - ST Track 2 (Computing)</p>
+        <p><strong>Instructor:</strong> Mr. Billy Joe Lupera</p>
+        <p><strong>Institution:</strong> School of Information and Communications Technology</p>
+        <p><strong>Date Submitted:</strong> March 21, 2026</p>
+    </div>
+
+  
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+    
+    <script>
+        function toggleProfiles() {
+            const dropdown = document.getElementById("profilesDropdown");
+            dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 2.1 - Review of Related Literature</title>
+    <style>
+        body { 
+            font-family: "Times New Roman", serif; 
+            margin: 0; 
+            background-color: #f9f9f9; 
+            line-height: 1.6; 
+        }
+
+        .navbar { 
+            background-color: #2d2d2d; 
+            padding: 10px; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .nav-links { 
+            display: flex; 
+        }
+
+        .nav-links a { 
+            color: #fff; 
+            padding: 10px 16px; 
+            text-decoration: none; 
+            font-size: 16px; 
+        }
+
+        .nav-links a:hover { 
+            background-color: #575757; 
+        }
+
+        .nav-links a.underline { 
+            font-weight: bold; 
+            text-decoration: underline; 
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc; 
+            margin: 80px 40px 40px 40px; 
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .pager { 
+            text-align: right; 
+            margin-top: 20px; 
+        }
+
+        .pager a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #2d2d2d; 
+        }
+        .pager a:hover { 
+            color: #575757; 
+        }
+
+        .footer { 
+            background-color: #2d2d2d; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html" class="underline">Chapter 2</a>
+            <a href="chapter3.1.html">Chapter 3</a>
+        </div>
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <h2>CHAPTER II - REVIEW OF RELATED LITERATURE AND SYSTEMS (Page 1)</h2>
+
+        <h3>2.1 Related Literature</h3>
+        <p>
+            According to GeeksforGeeks (2024), the Software Development Life Cycle (SDLC) is a structured framework that guides software development from the initial concept 
+            to the final deployment and maintenance. It breaks down the development process into clear phases such as planning, requirements analysis, system design, 
+            implementation, testing, deployment, and maintenance. Following SDLC ensures that software projects are systematically organized, risks are minimized, and the 
+            final product meets user requirements. For a cloud-integrated digital marketplace like Likha.ph, SDLC provides the essential structure needed to manage the 
+            complexities of web application development while ensuring quality and reliability.
+        </p>
+        <p>
+            Within the SDLC framework, Agile methodology is particularly suitable for dynamic web-based applications. Agile emphasizes iterative and incremental development, 
+            allowing developers to deliver functional components in short cycles called sprints. This methodology promotes continuous feedback from stakeholders, adaptability 
+            to changing requirements, and frequent updates of working software. By using Agile, the development of Likha.ph can respond efficiently to user needs, enhance 
+            collaboration between the development team and platform users, and deliver new marketplace features in a timely manner. Agile’s flexibility makes it more effective 
+            than traditional Waterfall methods for projects where requirements are expected to evolve. (Atlassian, 2024)
+        </p>
+        <p>
+            According to Rana et al. (2021), web-based systems are software applications accessed through internet browsers, enabling users to interact with platforms without 
+            installing software locally. These systems rely on server-side architecture, ensuring real-time data access, scalability, and cross-device compatibility. Web-based 
+            systems are essential for digital marketplaces like Likha.ph, which must accommodate multiple users simultaneously, allow real-time product updates, and integrate 
+            cloud services for payments, notifications, and analytics. The accessibility and scalability of web-based platforms make them ideal for connecting local makers 
+            with potential buyers efficiently.
+        </p>
+        <p>
+            According to Patel et al. (2020), Database Management is critical in ensuring the organized storage and retrieval of data for web applications. Likha.ph uses MySQL, 
+            an open-source relational database management system, to handle structured data such as user accounts, product listings, and transactions. The system will be 
+            developed and tested locally using XAMPP, which provides a bundled environment including Apache, MySQL, and PHP. This setup allows developers to efficiently manage 
+            the database, perform local testing, and optimize queries before deploying the system to a live server. MySQL’s reliability and compatibility with web-based 
+            applications make it an ideal choice for a marketplace platform that requires secure, consistent, and scalable data management. (Sahu & Tripathi, 2021)
+        </p>
+
+        <div class="pager">
+            <a href="chapter2.2.html">Next Page →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+</body>
+</html>

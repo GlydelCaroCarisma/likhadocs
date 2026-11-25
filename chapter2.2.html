@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 2.2 - Review of Related Literature and Systems</title>
+    <style>
+        body { 
+            font-family: "Times New Roman", serif; 
+            margin: 0;
+            background-color: #f9f9f9; 
+            line-height: 1.6; }
+
+        .navbar { 
+            background-color: #2d2d2d; 
+            padding: 10px; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .nav-links { 
+            display: flex; 
+        }
+
+        .nav-links a { color: #fff; padding: 10px 16px; text-decoration: none; font-size: 16px; }
+
+        .nav-links a:hover { background-color: #575757; }
+
+        .nav-links a.underline { font-weight: bold; text-decoration: underline; }
+
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc;
+            margin: 80px 40px 40px 40px; 
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .chapter p { 
+            text-indent: 40px; 
+            text-align: justify; 
+            margin-bottom: 15px; 
+        }
+
+        .chapter ul, .chapter ol { 
+            margin-left: 60px; 
+            text-align: justify; 
+        }
+
+        .chapter li { 
+            margin-bottom: 8px; 
+        }
+
+        .pager { 
+            text-align: left; 
+            margin-top: 20px; 
+        }
+
+        .pager a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #2d2d2d; }
+
+        .pager a:hover { 
+            color: #575757;
+         }
+
+        .footer { 
+            background-color: #2d2d2d; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 15px; 
+        }
+
+        table, th, td { 
+            border: 1px solid #000; 
+        }
+
+        th, td { 
+            padding: 8px; 
+            text-align: justify; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html" class="underline">Chapter 2</a>
+            <a href="chapter3.1.html">Chapter 3</a>
+        </div>
+
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <h2>CHAPTER II - REVIEW OF RELATED LITERATURE AND SYSTEMS (Page 2)</h2>
+
+        <h3>2.2 Related Systems</h3>
+        <p>Compare similar systems:</p>
+        <table>
+            <tr>
+                <th>System</th>
+                <th>Features</th>
+                <th>Limitations</th>
+            </tr>
+            <tr>
+                <td>Amazon Handmade (by Amazon)</td>
+                <td>Provides access to a large customer base, integrated logistics (Fulfillment by Amazon), seller analytics and advertising.</td>
+                <td>High commission fees; strict seller requirements and less focus on small/local artisans.</td>
+            </tr>
+            <tr>
+                <td>Etsy (Global Handmade Marketplace)</td>
+                <td>Allows artisans to sell handmade and vintage products; includes product listings, reviews, secure payment system, and global reach.</td>
+                <td>Charges listing and transaction fees, high competition among sellers, limited branding control.</td>
+            </tr>
+            <tr>
+                <td>Aseel (Artisan Support Marketplace)</td>
+                <td>Combines e-commerce with support for artisans; promotes handmade goods globally; supports cultural products.</td>
+                <td>Not purely commercial (partly humanitarian), limited scalability, fewer features compared to major platforms.</td>
+            </tr>
+            <tr>
+                <td>Felt (Local Handmade Marketplace)</td>
+                <td>Supports local handmade sellers; direct seller-to-buyer transactions; simple and community-focused platform.</td>
+                <td>Limited to a specific region, smaller market reach, fewer advanced features.</td>
+            </tr>
+            <tr>
+                <td>Pinkoi (Design & Craft Marketplace)</td>
+                <td>Focuses on creative and handmade products; supports cross-border selling; multi-language platform.</td>
+                <td>High competition; niche focus.</td>
+            </tr>
+        </table>
+
+        <h3>2.3 Synthesis</h3>
+        <p>
+            Based on the reviewed related literature and systems, existing digital marketplaces provide essential features such as product listing, online transactions, and 
+            customer interaction that help artisans reach wider markets. However, they also present limitations including high fees, strict requirements, and limited 
+            accessibility for small or local makers. In response to these gaps, the proposed system, <strong>Likha.ph</strong> aims to provide a more accessible, affordable, 
+            and user-centered platform tailored specifically for local artisans. Additionally, the use of Agile methodology allows continuous system improvement based on 
+            user feedback, making Likha.ph a more inclusive and adaptable digital marketplace compared to existing platforms.
+        </p>
+
+        <div class="pager">
+            <a href="chapter2.1.html">← Back to Page 1</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+</body>
+</html>

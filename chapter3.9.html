@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3.9 - Methodology</title>
+    <style>
+        body { 
+            font-family: "Times New Roman", serif; 
+            margin: 0; 
+            background-color: #f9f9f9; 
+            line-height: 1.6; 
+        }
+
+        .navbar { 
+            background-color: #2d2d2d; 
+            padding: 10px; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .nav-links { 
+            display: flex; 
+        }
+
+        .nav-links a { 
+            color: #fff; 
+            padding: 10px 16px; 
+            text-decoration: none; 
+            font-size: 16px; 
+        }
+
+        .nav-links a:hover { 
+            background-color: #575757; 
+        }
+
+        .nav-links a.underline { 
+            font-weight: bold; 
+            text-decoration: underline; 
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+        
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc; 
+            margin: 80px 40px 40px 40px; 
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .chapter h3 { 
+            margin-top: 20px; 
+        }
+
+        .chapter p { 
+            text-indent: 40px; 
+            text-align: justify; 
+            margin-bottom: 15px; 
+        }
+
+        .chapter ul { 
+            margin-left: 60px; 
+            margin-bottom: 15px; 
+        }
+        .pager { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 20px; 
+        }
+
+        .pager a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #2d2d2d; 
+        }
+
+        .pager a:hover { 
+            color: #575757; 
+        }
+
+        .footer { 
+            background-color: #2d2d2d; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html">Chapter 2</a>
+            <a href="chapter3.1.html" class="underline">Chapter 3</a>
+        </div>
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+
+    <div class="chapter">
+        <h2>CHAPTER III - METHODOLOGY AND SYSTEM DEVELOPMENT (Page 9)</h2>
+
+        <h3>Backend Development</h3>
+        <p>
+            In the development of the backend, PHP was used which serves as both the application server and database management system. PHP was used to handle server-side logic, including user authentication, product management, order processing, transactions, etc., in addition to generating dynamic HTML content for the frontend. MySQL was used to handle data storage, including user data, product data, orders, transactions, etc., to enable seamless communication between the application logic and the database.
+        </p>
+
+        <h3>Security Features</h3>
+        <ul>
+            <li><strong>Authentication</strong> - Secure login details are used to verify the user’s identity before allowing access.</li>
+            <li><strong>Authorization</strong> - Role-based access control is used to allow administrators, buyers, and sellers to perform operations according to their roles.</li>
+            <li><strong>Data Validation</strong> - Both client-side and server-side validation are used to validate data entered by users to avoid any error or malicious activities.</li>
+        </ul>
+
+        <h3>3.5 Usability Evaluation and Data Analysis</h3>
+        <h4>Evaluation Method</h4>
+        <p>
+            To evaluate the usability of the Likha.ph system, a survey questionnaire will be used for a selected number of respondents who will represent buyers, sellers, and administrators. The survey will include questions on ease of use, navigation, responsiveness, and satisfaction with the system. An evaluation tool, such as a structured questionnaire or survey form, will be prepared to gather feedback on system usability, functionality, and user satisfaction.
+        </p>
+
+        <h4>Rating Scale Used</h4>
+        <p>
+            A 5‑point Likert scale will be adopted, ranging from Strongly Disagree to Strongly Agree, to measure user perceptions on ease of use, efficiency, and overall satisfaction with the system.
+        </p>
+
+        <h4>Data Analysis Tools</h4>
+        <p>
+            The collected responses will be compiled and analyzed using Microsoft Excel or Google Sheets. These tools will facilitate the calculation of average scores, identification of trends, and visualization of results to determine which areas of the system perform well and which require improvement.
+        </p>
+
+        <div class="pager">
+            <a href="chapter3.8.html">← Back to Page 8</a>
+            <a href="chapter3.10.html">Next Page →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+    <script>
+        function toggleProfiles() {
+            const dropdown = document.getElementById("profilesDropdown");
+            dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>

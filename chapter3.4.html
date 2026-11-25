@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 3.4 - Methodology</title>
+    <style>
+        body { 
+            font-family: "Times New Roman", serif; 
+            margin: 0; 
+            background-color: #f9f9f9; 
+            line-height: 1.6; 
+        }
+
+        .navbar { 
+            background-color: #2d2d2d; 
+            padding: 10px; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1000;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .nav-links { 
+            display: flex; 
+        }
+
+        .nav-links a {
+            color: #fff;
+            padding: 10px 16px; 
+            text-decoration: none; 
+            font-size: 16px; 
+        }
+
+        .nav-links a:hover { 
+            background-color: #575757; 
+        }
+
+        .nav-links a.underline { 
+            font-weight: bold; 
+            text-decoration: underline; 
+        }
+
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc; 
+            margin: 80px 40px 40px 40px; 
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .chapter p { 
+            text-indent: 40px; 
+            text-align: justify; 
+            margin-bottom: 15px;
+        }
+
+        .chapter img { 
+            display: block; 
+            margin: 20px auto; 
+            max-width: 90%; 
+            border: 1px solid #000; 
+        }
+
+        .pager { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 20px; 
+        }
+
+        .pager a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #2d2d2d; 
+        }
+
+        .pager a:hover { 
+            color: #575757; 
+        }
+
+        .footer { 
+            background-color: #2d2d2d; 
+            color: #fff; 
+            text-align: center; 
+            padding: 15px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html">Chapter 1</a>
+            <a href="chapter2.1.html">Chapter 2</a>
+            <a href="chapter3.1.html" class="underline">Chapter 3</a>
+        </div>
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <h2>CHAPTER III - METHODOLOGY AND SYSTEM DEVELOPMENT (Page 4)</h2>
+
+        <p>
+            Key functions available to each user type, showing how they interact with the system to perform tasks such as Listing of Products and Seller Registration, Buying and Product Browsing, Ordering, and Purchasing. This diagram helps in understanding the overall flow of activities and the roles of each user in the system’s operation.
+        </p>
+
+        <p><strong>Figure 2. Use Case Diagram</strong></p>
+        <img src="pics/usecase.png" alt="Use Case Diagram">
+
+        <p>
+            The Seller can sign up, log in, add or edit products, view orders, and message buyers. The Buyer can sign up, log in, browse and search products, 
+            view product details, add items to the cart, and checkout. The Admin can log in, approve sellers, message sellers, and manage users. These roles 
+            and functions ensure smooth operation of the marketplace platform.
+        </p>
+
+        <h3>Activity Diagram</h3>
+        <p>
+            Activity diagram is a type of UML (Unified Modeling Language) diagram that visually represents the workflow or sequence of activities in a system. 
+            It shows how processes begin, the decisions that guide them, the actions taken, and how they end. The activity diagrams provide a clear description of 
+            the roles and their workflows in the Likha.ph system. The Admin handles user, transaction, and report management. The Seller is responsible for handling 
+            products and orders while interacting with buyers. The Buyer is responsible for handling shopping activities. Overall, it is a clear description of how 
+            each user type will work with the system, making it easy for developers and stakeholders to understand.
+        </p>
+
+        <div class="pager">
+            <a href="chapter3.3.html">← Back to Page 3</a>
+            <a href="chapter3.5.html">Next Page →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+    <script>
+        function toggleProfiles() {
+            const dropdown = document.getElementById("profilesDropdown");
+            dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>

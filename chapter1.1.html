@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1.1 - Introduction</title>
+    <style>
+        body { 
+            font-family: "Times New Roman", serif; 
+            margin: 0; 
+            background-color: #f9f9f9; 
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: #2d2d2d;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            background-color: #575757;
+        }
+
+        .nav-links a.underline {
+            color: #fff;            
+            font-weight: bold;     
+            text-decoration: underline; 
+        }
+        .menu-icon {
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 30px; 
+        }
+
+        .profiles {
+            display: none; 
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            background-color: #2d2d2d;
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .profile {
+            color: #fff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .chapter { 
+            background: #fff; 
+            padding: 30px; 
+            border: 1px solid #ccc; 
+            margin: 80px 40px 40px 40px;
+        }
+
+        .chapter h2 { 
+            border-bottom: 1px solid #ccc; 
+            padding-bottom: 5px; 
+        }
+
+        .pager { 
+            text-align: right; 
+            margin-top: 20px; 
+        }
+
+        .pager a { 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: #2d2d2d; 
+        }
+
+        .pager a:hover { 
+            color: #575757; 
+        }
+
+        .footer {
+            background-color: #2d2d2d;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="chapter1.1.html" class="underline">Chapter 1</a>
+            <a href="chapter2.1.html">Chapter 2</a>
+            <a href="chapter3.1.html">Chapter 3</a>
+        </div>
+        <div class="menu-icon" onclick="toggleProfiles()">☰</div>
+
+        <div class="profiles" id="profilesDropdown">
+            <div class="profile"><img src="pics/Jeffrylat.jpg" alt="Jeff">Jeffry</div>
+            <div class="profile"><img src="pics/ako gwapa.jpg" alt="Glyds">Glydel</div>
+            <div class="profile"><img src="pics/Tonie.jpg" alt="Tonie">Tonie</div>
+            <div class="profile"><img src="pics/Rubbylat.jpg" alt="Ruby">Ruby</div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <h2>CHAPTER I - INTRODUCTION (Page 1)</h2>
+
+        <h3>1.1 Background of the Study</h3>
+        <p>
+            In today’s generation, local fashion makers and artisans contribute significantly to the preservation of Filipino culture through their handmade products. 
+            However, many of them still rely on traditional selling methods such as word-of-mouth, small community events, and social media platforms. While these methods 
+            provide some level of exposure, they are often limited and lack a structured system for managing product listings, orders, and customer interactions. As digital 
+            commerce continues to expand, the absence of a dedicated and organized online platform puts local makers at a disadvantage.
+        </p>
+        <p>
+            One of the major challenges faced by local artisans is their limited access to wider markets and effective online selling tools. Fast fashion brands dominate 
+            digital platforms, making it difficult for small-scale makers to compete and gain visibility. As a result, their products often go unnoticed, leading to lower 
+            income and fewer growth opportunities. At the same time, buyers who are interested in unique, locally made products struggle to discover and purchase these 
+            items due to the lack of a centralized and accessible marketplace.
+        </p>
+        <p>
+            To address these issues, <strong>Likha.ph: A Cloud-Integrated Digital Marketplace for Local Makers</strong> is proposed. The system aims to provide a dedicated 
+            platform where artisans can register, showcase, and sell their products directly to buyers in a more efficient and organized manner. By integrating cloud-based 
+            technology and web services, the platform ensures secure transactions, reliable data management, and an improved user experience. This study seeks to empower 
+            local makers by expanding their market reach, increasing their income opportunities, and promoting Filipino craftsmanship in the digital marketplace.
+        </p>
+
+        <h3>1.2 Problem Statement and Objectives</h3>
+        <p><strong>Problem Statement</strong></p>
+        <ol>
+            <li>How can a web-based platform be developed to help local fashion makers register, manage their profiles, and sell their handmade products online?</li>
+            <li>How can the system provide buyers with an easy and efficient way to browse, search, and purchase locally made fashion products?</li>
+            <li>How can cloud technology and web services be utilized to improve system performance, data management, and accessibility?</li>
+        </ol>
+
+        <div class="pager">
+            <a href="chapter1.2.html">Next Page →</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 School of Information and Communications Technology | Project Documentation Template
+    </div>
+
+</body>
+</html>
